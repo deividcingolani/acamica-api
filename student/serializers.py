@@ -4,10 +4,13 @@ from .models import (Student, Career, Countries,
                      )
 
 class StudentSerializer(serializers.ModelSerializer):
+    country_description = serializers.ReadOnlyField(source='country.description')
+    city_description = serializers.ReadOnlyField(source='city.description')
+    career_description = serializers.ReadOnlyField(source='career.description')
     class Meta:
         model = Student
         fields = '__all__'
-
+        extra_fields = []
 
 class CareerSerializer(serializers.ModelSerializer):
     class Meta:

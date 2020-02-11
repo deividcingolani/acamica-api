@@ -10,7 +10,7 @@ router.register('careers', CareerViewSet,
                 basename='careers')
 router.register('countries', CountriesViewSet, basename='countries')
 router.register('cities', CitiesViewSet, basename='cities')
-router.register('', StudentViewSet,
+router.register('students', StudentViewSet,
                 basename='students')
 
 urlpatterns = router.urls

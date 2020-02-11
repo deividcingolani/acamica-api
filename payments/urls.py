@@ -6,11 +6,11 @@ from rest_framework.routers import SimpleRouter
 
 
 router = SimpleRouter()
-router.register('types', TypePaymentViewSet,
+router.register('payments/types', TypePaymentViewSet,
                 basename='types')
-router.register('dues', DueViewSet,
+router.register('payments/dues', DueViewSet,
                 basename='dues')
-router.register('', PaymentViewSet, basename='payments')
+router.register('payments', PaymentViewSet, basename='payments')
 
 
 urlpatterns = router.urls
