@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    ports:
+      - '3306:3306'
+    environment:
+       MYSQL_DATABASE: 'acamicaportal'
+       MYSQL_USER: 'sa'
+       MYSQL_PASSWORD: 'PASSWORD'
+       MYSQL_ROOT_PASSWORD: 'password'
+    volumes:
+      - ./data:/var/lib/mysql
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev    
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

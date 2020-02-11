@@ -12,3 +12,4 @@ Markdown==3.2
 django-filter==2.2.0
 flake8==3.7.9
 django-related-admin==0.7.0
+mysql-client
