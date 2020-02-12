@@ -32,6 +32,9 @@ Core decisions:
 
 I decide build an api for students and other for payments because I think in a next feature where we can implement other modules.
 
+Branches
+Develop: Where We can develop our application
+Master: since is deploy our application
 
 Requirements
 
@@ -40,8 +43,6 @@ Docker
 Install
 
 $ git clone https://github.com/deividcingolani/acamica-api.git
-
 $ cd acamica-api
-
 $ docker-compose up --build
   
