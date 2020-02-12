@@ -8,6 +8,7 @@ Admin of Django
 https://apiacamica2020.herokuapp.com/admin/
 
 Api Payments
+
 https://apiacamica2020.herokuapp.com/api/payments/
 
 https://apiacamica2020.herokuapp.com/api/payments/types/
