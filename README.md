@@ -1,6 +1,6 @@
 Acamica
 
-This is the api for a challenge of Acamica
+This is an api for a challenge of Acamica
 
 URLS:
 Admin of Django
