@@ -1,4 +1,4 @@
-                                                  Acamica
+                                                  Acamica API
 
 This is an api for a challenge of Acamica
 
