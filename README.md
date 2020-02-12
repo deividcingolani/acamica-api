@@ -2,12 +2,26 @@ Acamica
 
 This is the api for a challenge of Acamica
 
+URLS:
+Admin of Django
+https://apiacamica2020.herokuapp.com/admin/
 
-[0.1] (12/02/2020) Beta.
+Api Payments
+https://apiacamica2020.herokuapp.com/api/payments/
+https://apiacamica2020.herokuapp.com/api/payments/types/
+https://apiacamica2020.herokuapp.com/api/payments/dues/
 
-LICENSE
+Api Students
+https://apiacamica2020.herokuapp.com/api/students/
 
-https://github.com/deividcingolani/AltranHeroes/blob/master/LICENSE
+Api Cities
+https://apiacamica2020.herokuapp.com/api/cities/
+https://apiacamica2020.herokuapp.com/api/countries/
+https://apiacamica2020.herokuapp.com/api/careers/
+
+Core decisions:
+I decide build an api for students and other for payments because I think in a next feature where we can implement other modules.
+
 
 Requirements
 
@@ -18,8 +32,6 @@ Install
 $ git clone https://github.com/deividcingolani/acamica-api.git
 
 $ cd acamica-api
-
-$ npm install
 
 $ docker-compose up --build
   
